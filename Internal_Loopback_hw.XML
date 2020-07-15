@@ -9,26 +9,40 @@
 	<bti:channel429 ID="0" name="CH0" hardwareChannel="0" selfTestBus="true">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
-				<bti:label ID="134" name="label 134" monitor="true" labelDecimal="134">
-				</bti:label>
-				<bti:label ID="135" name="label 135" monitor="true" labelDecimal="135">
-				</bti:label>
+				<bti:label ID="270" name="CAS_Information" monitor="true" labelDecimal="184"/>
+				<bti:label ID="301" name="AircraftRegistryWord1" monitor="true" labelDecimal="193"/>
+				<bti:label ID="302" name="AircraftRegistryWord2" monitor="true" labelDecimal="194"/>
+				<bti:label ID="303" name="Aircraft Registry Word 3" monitor="true" labelDecimal="195"/>
 			</bti:labels>
 		</bti:rxChannel>
 	</bti:channel429>
-	<bti:channel429 ID="16" name="CH16" hardwareChannel="16" selfTestBus="true">
+	<bti:channel429 ID="17" name="CH17" hardwareChannel="17" selfTestBus="true">
 		<bti:txChannel speedKHz="100" scheduleMode="Rate" scheduleBuildUnit="Microsecond" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
 			<bti:messages>
-				<bti:message ID="134" name="label 134" messageBufferIDRef="128" minRate="1000" maxRate="1000" labelDecimal="134">
+				<bti:message ID="270" name="CAS_Information" messageBufferIDRef="127" minRate="1000" maxRate="1000" labelDecimal="184">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="127" name="MessageBuffer">
+							<bti:rawData>AAAAAAAA</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+				</bti:message>
+				<bti:message ID="301" name="AircraftRegistryWord1" messageBufferIDRef="128" minRate="1000" maxRate="1000" labelDecimal="193">
 					<bti:messageBuffers>
 						<bti:messageBuffer ID="128" name="MessageBuffer">
 							<bti:rawData>AAAAAAAA</bti:rawData>
 						</bti:messageBuffer>
 					</bti:messageBuffers>
 				</bti:message>
-				<bti:message ID="135" name="label 135" messageBufferIDRef="129" minRate="1000" maxRate="1000" labelDecimal="135">
+				<bti:message ID="302" name="AircraftRegistryWord2" messageBufferIDRef="129" minRate="1000" maxRate="1000" labelDecimal="194">
 					<bti:messageBuffers>
-						<bti:messageBuffer ID="129" name="messageBuffer">
+						<bti:messageBuffer ID="129" name="MessageBuffer">
+							<bti:rawData>AAAAAAAA</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+				</bti:message>
+				<bti:message ID="303" name="AircraftRegistryWord3" messageBufferIDRef="130" minRate="1000" maxRate="1000" labelDecimal="195">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="130" name="MessageBuffer">
 							<bti:rawData>AAAAAAAA</bti:rawData>
 						</bti:messageBuffer>
 					</bti:messageBuffers>
